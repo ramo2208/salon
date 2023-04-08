@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+
+    <title>Servis Agregati</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img
+            src="public/img/Servis Agregati-logos_black.png"
+            class="img-fluid img"
+            alt=""
+          />
+
+          <span class="fw-bold text-dark text-center"> Servis Agregati</span>
+        </a>
+
+        <!-- Toggle button for Navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav text-uppercase ms-auto">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/">Pocetna</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/galery">Galerija</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/onama">Onama</a>
+            </li>
+
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="#kontakt"
+                data-bs-target="#formaModal"
+                data-bs-toggle="modal"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Naslov -->
+    <div class="naslov container">
+      <h1 class="text-center text-dark fw-bold mb-5">Servis Agregata</h1>
+    </div>
+    <!-- Img container -->
+
+    <div
+      class="div-left bg-black row container-fluid justify-content-between align-content-center mx-auto mb-1 cols-sm-4"
+    >
+      <img
+        src="public/img/ikonsalati/agregat.png"
+        alt=""
+        class="icon img-fluid"
+      />
+
+      <img
+        src="public/img/ikonsalati/kosacica-icon.png"
+        alt=""
+        class="icon img-fluid"
+      />
+
+      <img
+        src="public/img/ikonsalati/kultivator.png"
+        alt=""
+        class="icon img-fluid"
+      />
+
+      <img
+        src="public/img/ikonsalati/motorna-testera.jpg"
+        alt=""
+        class="icon img-fluid"
+      />
+
+      <img
+        src="public/img/ikonsalati/pumpa-navod.png"
+        alt=""
+        class="icon img-fluid"
+      />
+
+      <img
+        src="public/img/ikonsalati/trimer.png"
+        alt=""
+        class="icon img-fluid"
+      />
+
+      <img
+        src="public/img/ikonsalati/vibro-ploca.png"
+        alt=""
+        class="icon img-fluid"
+      />
+
+      <img
+        src="public/img/ikonsalati/vibro-zaba.png"
+        alt=""
+        class="icon img-fluid"
+      />
+    </div>
+
+    <div class="container mx-auto my-4">
+      <p class="txt-info text-uppercase fw-bold text-danger fs-5">
+        ⬆️ Klikni na ikonu za informacije ⬆️
+      </p>
+    </div>
+
+    <!-- Card container -->
+    <div class="card container-fluid bg-gradient bg-light border-0">
+      <div
+        class="container-fluid card-header bg-gradient bg-warning text-light text-center d-flex justify-content-between align-items-center"
+      >
+        <img
+          src="public/img/Servis Agregati-logos_black.png"
+          alt=""
+          class="img"
+        />
+        <p class="d-flex mx-auto fs-2 text-secondary">Servis održavanje</p>
+      </div>
+
+      <div class="card-body text-center container">
+        <img
+          class="card-img-top"
+          src="public/img/ikonsalati/agregat.png"
+          alt="Card image"
+        />
+        <h3 class="card-title fw-bold">Agregat</h3>
+        <p class="content-card card-text text-center fs-5">
+          Servis, popravka održavanje Agregata
+        </p>
+        <button
+          type="button"
+          class="btn btn-danger bg-gradient px-4"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Detaljnije...
+        </button>
+      </div>
+    </div>
+    <!-- Modal opis -->
+    <div
+      class="modal fade mx-auto"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-gradient bg-warning">
+            <h1
+              class="modal-title fs-5 display-3 fw-bold text-muted text-uppercase"
+              id="exampleModalLabel"
+            >
+              Kosacica
+            </h1>
+
+            <button
+              type="button"
+              class="btn-close px-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start fw-bold">
+            <p class="lh-base fs-5">
+              Popravka i servisiranje motornih benzinskih i dizel agregata je
+              esencijalna usluga koja omogućava produženje životnog veka ovih
+              mašina, poboljšanje njihovih performansi i sigurnosti u radu. To
+              je proces koji uključuje detaljno ispitivanje svih delova i
+              komponenti motora, otkrivanje i otklanjanje kvarova, zamenu
+              istrošenih ili oštećenih delova, čišćenje i podmazivanje
+              mehanizama, podešavanje i kalibraciju sistema za ubrizgavanje
+              goriva i drugih vitalnih komponenti. Ovaj proces zahteva veštinu,
+              znanje i iskustvo stručnjaka koji su specijalizovani za popravku i
+              servisiranje motornih benzinskih i dizel agregata. Oni su
+              opremljeni najnovijom tehnologijom i alatima kako bi pružili
+              visokokvalitetne usluge koje su prilagođene potrebama svakog
+              klijenta. Popravka i servisiranje motornih benzinskih i dizel
+              agregata takođe uključuje procenu performansi motora, testiranje
+              sistema za hlađenje, provjeravanje električnih sistema i
+              obavljanje drugih neophodnih testova. Sve ove aktivnosti imaju za
+              cilj poboljšanje efikasnosti motora, smanjenje emisije štetnih
+              gasova i poboljšanje ukupne pouzdanosti mašine. Kada se pravilno
+              izvrši, popravka i servisiranje motornih benzinskih i dizel
+              agregata može značajno poboljšati performanse vaše mašine,
+              smanjiti troškove održavanja i produžiti njen radni vek. Stoga je
+              važno redovno održavati i servisirati vaš motor kako bi on radio
+              na najbolji način.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal Forma -->
+    <div
+      class="modal fade mx-auto"
+      id="formaModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-gradient bg-warning">
+            <h6
+              class="naslov fw-bold text-dark text-center text-uppercase"
+              id="modalForma"
+            >
+              Pošaljite Mail
+            </h6>
+
+            <button
+              type="button"
+              class="btn-close px-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start fw-bold forma-poruka modal-sm">
+            <form
+              method="post"
+              class="form-floating forma-msg contact-form"
+              action="/"
+            >
+              <div class="mb-3">
+                <label for="ime" class="form-label">Ime i Prezime</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ime"
+                  placeholder="Pera Peric"
+                  name="fullName"
+                  required
+                />
+                <p class="d-none">
+                  Titula Ime Srednje-ime Prezime moraju pocinjati velikim slovom
+                  minmalno 4 karaktera
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="prezime" class="form-label">Telefon</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="prezime"
+                  placeholder="064123456"
+                  name="phone"
+                  required
+                />
+                <p class="d-none">
+                  Telefon moze sadrzati samo brojeve minimalno 6 cifara
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Vaš Mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="pera@gmail.com"
+                  name="email"
+                  required
+                />
+                <p class="d-none">
+                  Mail mora biti unesen u ispravnom formatu
+
+                  <code> pera@peric.co.rs </code>
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="textarea" class="form-label">Unesite poruku</label>
+                <textarea
+                  class="form-control msg"
+                  id="textarea"
+                  rows="5"
+                  placeholder="Unesite Poruku "
+                  name="msg"
+                ></textarea>
+              </div>
+
+              <button
+                
+                type="submit"
+                class="btn btn-danger bg-gradient my-3 w-100 submit"
+              >
+                Posalji
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer
+      class="container-fluid d-flex f-wrap row bg-gradient bg-light justify-content-center align-content-center"
+    >
+      <div
+        class="d-flex justify-content-center align-content-center col-12 col-md-3 col-xl-4"
+      >
+        <img
+          src="public/img/Servis Agregati-logos_black.png"
+          alt=""
+          class="img-fluid w-50 h-100"
+        />
+      </div>
+      <div
+        class="d-flex justify-content-center align-content-center col-1 col-md-6 col-xl-4"
+      >
+        <ul
+          class="navbar nav fw-bolder justify-content-center align-content-center"
+        >
+          <li class="nav-item">
+            <a href="/" class="nav-link text-muted">Pocetna</a>
+          </li>
+          <li class="nav-item">
+            <a href="/galerija" class="nav-link text-muted">Galerija</a>
+          </li>
+          <li class="nav-item">
+            <a href="/onama" class="nav-link text-muted">Onama</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#kontakt"
+              data-bs-target="#formaModal"
+              data-bs-toggle="modal"
+              class="nav-link text-muted"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/script.js"></script>
+    <script src="public/validacija.js"></script>
+  </body>
+</html>

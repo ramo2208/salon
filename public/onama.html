@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+
+    <title>Servis Agregati</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img
+            src="public/img/Servis Agregati-logos_black.png"
+            class="img-fluid img"
+            alt=""
+          />
+
+          <span class="fw-bold text-dark text-center"> Servis Agregati</span>
+        </a>
+
+        <!-- Toggle button for Navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav text-uppercase ms-auto">
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/">Pocetna</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/galery">Galerija</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/onama">Onama</a>
+            </li>
+
+            <li class="nav-item px-3">
+              <a
+                class="nav-link"
+                href="#kontakt"
+                data-bs-target="#formaModal"
+                data-bs-toggle="modal"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Naslov -->
+    <div class="naslov">
+      <h1 class="text-center text-black fw-bold mb-5 bg-gradient text-bg-light">
+        Onama
+      </h1>
+    </div>
+    <!-- lefth & right div -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-sm-4 bg-warning bg-gradient" id="l-div">
+          <img
+            src="public/img/galery/agregat2.jpg"
+            width="200px"
+            height="200px"
+            alt="Agregati2.jpg"
+            class="img-thumbnail mt-5 d-flex mx-auto"
+          />
+          <div class="mt-5 text-center text-muted">
+            <h5 class="fw-bold">Aleksa Stojanović</h5>
+            <p>Vuka Karadžića 23</p>
+            <p>11309 Leštane</p>
+            <p>Tel: 0618015505</p>
+            <p>
+              <a
+                href="mailto:stojanovicaleksa28@gmail.com"
+                class="text-decoration-none"
+                >Posalji mi mejl</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row col-sm-4" id="r1-div">
+          <div
+            class="fw-bold d-flex flex-column justify-content-center text-center"
+          >
+            <p>Servis i popravka Agregata,</p>
+            <p>vibro-ploča, vibro-žaba, kosačica,</p>
+            <p>trimera, motornih testera, kultivatora,</p>
+            <p>pumpi za navodnjavanje i dr</p>
+            <p class="text-bg-danger">
+              Za sve informacije pozvati ili poslati mail.
+            </p>
+          </div>
+        </div>
+        <div class="row col-sm-4" id="r2-div">
+          <div class="text-center">
+            <h2 class="fw-semibold">Kako do nas</h2>
+          </div>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1417.0335758908366!2d20.57532489113904!3d44.738646776219234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1679867136202!5m2!1ssr!2srs"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal Forma -->
+    <div
+      class="modal fade mx-auto"
+      id="formaModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-gradient bg-warning">
+            <h6
+              class="naslov fw-bold text-dark text-center text-uppercase"
+              id="modalForma"
+            >
+              Pošaljite Mail
+            </h6>
+
+            <button
+              type="button"
+              class="btn-close px-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-start fw-bold forma-poruka modal-sm">
+            <form method="post" class="form-floating forma-msg contact-form" action="/">
+              <div class="mb-3">
+                <label for="ime" class="form-label">Ime i Prezime</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ime"
+                  placeholder="Pera Peric"
+                  name="fullName"
+                  required
+                />
+                <p class="d-none">
+                  Titula Ime Srednje-ime Prezime moraju pocinjati velikim slovom
+                  minmalno 4 karaktera
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="prezime" class="form-label">Telefon</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="prezime"
+                  placeholder="064123456"
+                  name="phone"
+                  required
+                />
+                <p class="d-none">
+                  Telefon moze sadrzati samo brojeve minimalno 6 cifara
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Vaš Mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="pera@gmail.com"
+                  name="email"
+                  required
+                />
+                <p class="d-none">
+                  Mail mora biti unesen u ispravnom formatu
+
+                  <code> pera@peric.co.rs </code>
+                </p>
+              </div>
+              <div class="mb-3">
+                <label for="textarea" class="form-label">Unesite poruku</label>
+                <textarea
+                  class="form-control"
+                  id="textarea"
+                  rows="5"
+                  placeholder="Unesite Poruku "
+                  name="msg"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-danger bg-gradient my-3 w-100"
+              >
+                Posalji
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-gradient shadow mb-0">
+      <div class="row mx-0">
+        <div class="col-sm-4">
+          <img
+            src="public/img/Servis Agregati-logos_black.png"
+            alt=""
+            class="img-fluid w-50 h-100"
+          />
+        </div>
+        <div class="col-sm-4 row">
+          <ul class="navbar nav fw-bolder row">
+            <li class="nav-item col-sm-3">
+              <a href="/" class="nav-link text-muted">Pocetna</a>
+            </li>
+            <li class="nav-item col-sm-3">
+              <a href="/galery" class="nav-link text-muted">Galerija</a>
+            </li>
+            <li class="nav-item col-sm-3">
+              <a href="/onama" class="nav-link text-muted">Onama</a>
+            </li>
+            <li class="nav-item col-sm-3">
+              <a
+                href="#kontakt"
+                data-bs-target="#formaModal"
+                data-bs-toggle="modal"
+                class="nav-link text-muted"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+         
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/script.js"></script>
+    <script src="public/validacija.js"></script>
+  </body>
+</html>
